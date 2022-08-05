@@ -24,7 +24,7 @@ app.get('*', function (req, res) {
 app.all("*",(req,res)=>{
     res.status(404).send(`${req.url} not found!!`)
 })
-mongoose.connect("mongodb://localhost:27017/testdb",{
+mongoose.connect("mongodb+srv://arpit:U-B5cEbh$w.6C27@cluster0.49lwk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
     useNewUrlParser:true
 }).then(()=>{
     app.listen(PORT,()=>{
