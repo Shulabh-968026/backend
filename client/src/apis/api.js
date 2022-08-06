@@ -8,7 +8,7 @@ import {
 import { useDispatch } from "react-redux";
 
 // url for 
-export const url = '' //"http://localhost:5000/admin/v1/user"
+export const url = ''//"http://localhost:5000/admin/v1/user"
 
 //export const fetchUser = axios.get(url) 
 

@@ -19,7 +19,7 @@ const userRouter = require("./router/userRouter");
 app.use("/admin/v1/user",userRouter)
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.status(404).sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.all("*",(req,res)=>{
     res.status(404).send(`${req.url} not found!!`)
